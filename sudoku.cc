@@ -9,7 +9,6 @@ void findSolution(int row, int col, vector<vector<int>> &rows, int n) {
     //check rules
     //if they break use recursion and generate a new number (n + 1)
 
-
 }
 
 void solve(vector<vector<int>> rows) {
@@ -24,7 +23,7 @@ string printBoard(vector<vector<int>> rows) {
     
 }
 
-
+ 
 int main() {
     vector<vector<int>> rows;
     rows.reserve(9);
