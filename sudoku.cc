@@ -8,7 +8,13 @@ using namespace std;
 void findSolution(int row, int col, vector<vector<int>> &rows, int n) {
     //check rules
     //if they break use recursion and generate a new number (n + 1)
-
+    for(int i = 0; i < 9; i++)
+    {
+        if(rows[row][i] == n)
+        {
+            findSolution(row, col, rows, n++);
+        }
+    }
 }
 
 void solve(vector<vector<int>> rows) {
